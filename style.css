@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+
 /* Reset básico */
 * {
     margin: 0;
@@ -6,10 +8,25 @@
 }
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: "Luckiest Guy", cursive, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #fff8f0;
-    color: #3e2f1c;
-    line-height: 1.6;/* espaço*/
+    color: #1c3e26;
+    line-height: 1.6;
+}/* Espaço */
+
+.main-image-container {
+    width: 100%;
+    margin: 0; 
+    overflow: hidden;
+}
+
+.main-image-container img {
+    width: 100%; 
+    height: 400px; 
+    object-fit: cover; 
+    display: block; 
+    border-radius: 0;
+    box-shadow: none; 
 }
 
 /* Cabeçalho */
@@ -17,7 +34,7 @@ header {
     background-color: #ffcc70;
     text-align: center;
     padding: 2rem;
-    border-bottom: 5px dashed #d17c00; /* tracejada */
+    border-bottom: 5px dashed #d17c00;
 }
 
 header h1 {
@@ -44,7 +61,7 @@ nav ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 2rem; /* lado a lado */
+    gap: 2rem;
 }
 
 nav a {
@@ -58,7 +75,6 @@ nav a:hover {
     color: #d17c00;
 }
 
-
 /* Conteúdo principal */
 main {
     padding: 2rem;
@@ -69,77 +85,73 @@ main {
 /* Seções */
 section {
     margin-bottom: 3rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
 }
 
 section h2 {
     font-size: 2rem;
     color: #d17c00;
     margin-bottom: 0.5rem;
+    width: 100%;
+    text-align: center;
 }
 
 section hr {
     border: none;
     border-top: 2px dashed #d17c00;
     margin-bottom: 1rem;
-}
-
-/* Textos */
-h3, h4 {
-    margin-top: 1.5rem;
-    color: #8b3200;
-}
-
-p {
-    margin: 0.3rem 0;
-}
-
-strong {
-    color: #000;
-}
-
-/* Imagens gerais */
-img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 12px;
-    margin: 0.5rem 0 1.5rem;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    margin: 1rem auto;
 }
 
 /* Cartões de comida */
-.card-item {
-    gap: 1.5rem; /* lado a lado */
+.item-card {
+    flex: 1 1 280px;
+    max-width: 300px;
     display: flex;
-    align-items: flex-start;
-    margin-bottom: 2rem;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
     background-color: #fff1dd;
     border-radius: 12px;
     padding: 1rem;
-    box-shadow: 0 0 8px rgba(0, 0, 0, 0.05);   
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.05); 
 }
 
-.card-item .info {
+.item-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.item-card .info {
     flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
 }
 
-.card-item h3 {
+.item-card h3, .item-card h4 {
+    margin-top: 0;
     margin-bottom: 0.5rem;
     color: #8b3200;
 }
 
-.card-item p {
+.item-card p {
     margin: 0.3rem 0;
 }
 
-.card-item img {
-    width: 200px;
-    height: auto;
-    border-radius: 15px;
-    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
-}
-
-.imagem-container {
-    flex-shrink: 0; /* impede a imagem de reduzir com o texto */
+.item-card strong {
+    color: #19ad19;
+    font-size: 1.1em;
+    margin-top: auto;
 }
 
 /* Rodapé */
@@ -149,4 +161,5 @@ footer {
     padding: 1rem;
     font-size: 0.9rem;
     border-top: 3px dashed #d17c00;
+    margin-top: 3rem;
 }
