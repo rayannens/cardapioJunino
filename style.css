@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
+
 /* Reset básico */
 * {
     margin: 0;
@@ -11,7 +13,10 @@ body {
     background-color: #fff8f0;
     color: #1c3e26;
     line-height: 1.6;
+     cursor: url('img/corn(normal select).cur'), auto;/* espiga de milho como cursor*/
 }
+
+
 
 /* Espaço */
 .main-image-container {
@@ -54,6 +59,7 @@ nav {
     padding: 1rem;
     border-bottom: 3px solid #d17c00;
     text-align: center;
+    
 }
 
 nav ul {
@@ -69,6 +75,7 @@ nav a {
     font-weight: bold;
     color: #8b3200;
     transition: color 0.3s;
+    cursor: url('img/corn(alternate select).cur'), pointer;
 }
 
 nav a:hover {
@@ -92,6 +99,7 @@ section {
 }
 
 section h2 {
+    font-family: 'Rock Salt', cursive;
     font-size: 2rem;
     color: #d17c00;
     margin-bottom: 0.5rem;
@@ -174,6 +182,7 @@ section hr {
     cursor: pointer; 
     margin-top: 1rem;
     transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out; 
+    cursor: url('img/corn(alternate select).cur'), pointer;
 }
 
 .item-card button:hover {
