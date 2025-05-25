@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
 
 /* Reset básico */
 * {
@@ -99,7 +98,6 @@ section {
 }
 
 section h2 {
-    font-family: 'Rock Salt', cursive;
     font-size: 2rem;
     color: #d17c00;
     margin-bottom: 0.5rem;
