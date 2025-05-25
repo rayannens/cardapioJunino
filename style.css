@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
-
 /* Reset básico */
 * {
     margin: 0;
@@ -12,8 +11,9 @@ body {
     background-color: #fff8f0;
     color: #1c3e26;
     line-height: 1.6;
-}/* Espaço */
+}
 
+/* Espaço */
 .main-image-container {
     width: 100%;
     margin: 0; 
@@ -46,7 +46,7 @@ header p {
     font-size: 1.2rem;
     margin-top: 0.5rem;
     font-style: italic;
-}   
+} 
 
 /* Navegação */
 nav {
@@ -119,6 +119,16 @@ section hr {
     border-radius: 12px;
     padding: 1rem;
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.05); 
+    
+    /* Transição */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; 
+    opacity: 0; 
+    animation: fadeIn 0.8s ease-out forwards; 
+}
+
+.item-card:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .item-card img {
@@ -152,6 +162,36 @@ section hr {
     color: #19ad19;
     font-size: 1.1em;
     margin-top: auto;
+}
+
+/* Botões */
+.item-card button {
+    background-color: #ffcc70; 
+    color: #8b3200; 
+    border: none; 
+    padding: 0.8rem 1.5rem; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    margin-top: 1rem;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out; 
+}
+
+.item-card button:hover {
+    background-color: #d17c00; 
+    color: #fff; 
+}
+
+
+/* Animação  */
+@keyframes fadeIn {
+    from {
+        opacity: 0; 
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0); 
+    }
 }
 
 /* Rodapé */
